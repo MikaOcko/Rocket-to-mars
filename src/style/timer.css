@@ -1,0 +1,21 @@
+.timer {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer__clock {
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+    display: inherit;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+span.timer__clock-numbers {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}

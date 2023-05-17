@@ -1,0 +1,115 @@
+/* __________Desktop__________ */
+
+/*_____General_____ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Pattaya", cursive;
+  font-size: 1.5rem;
+  background-image: url("../../public/assets/image/background_rocket.jpg");
+  background-size: cover;
+}
+
+/*_____Logo_____ */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  height: 20vh;
+  margin: 1rem;
+  padding: 1rem;
+  animation: rotate 1.2s alternate infinite;
+}
+
+/* Logo animation */
+@keyframes rotate {
+  to {
+    transform: rotate(20deg);
+  }
+}
+
+/*_____Speech (main)_____*/
+.speech {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.speech__paragraph,
+.speech__image {
+  display: inherit;
+  padding: 1rem;
+  margin: 1rem;
+  width: 50%;
+}
+
+.speech__paragraph {
+  flex-direction: column;
+}
+
+.speech__paragraph h1 {
+  color: #46e1f4;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.speech__image {
+  justify-content: center;
+  align-items: inherit;
+}
+
+.speech__image img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+
+/*_____Timers_____*/
+
+.timers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  color: white;
+  background-color: red;
+  padding: .5rem 3rem;
+  margin: 1rem 2rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: darkred;
+  cursor: pointer;
+}
+
+/* __________Mobile__________ */
+
+@media screen and (max-width: 950px) {
+  .speech {
+    flex-direction: column;
+  }
+
+  .speech__paragraph,
+  .speech__image {
+    width: 100%;
+  }
+}

@@ -1,6 +1,8 @@
+// React importation
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+
+// Components importation
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
